@@ -1,0 +1,136 @@
+:root {
+    --background-color: #FAFAFA;
+    --font-color: #4D4F5E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 30px;
+    color: var(--font-color);
+    text-align: center;
+}
+
+span {
+    font-weight: 600;
+}
+
+.main-text p {
+    max-width: 500px;
+    text-align: center;
+    margin: 25px auto 50px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--font-color);
+    opacity: 0.5;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-border-supervisor {
+    border-radius: 15px;
+    max-width: 350px;
+    border-top: 4px solid #43D3D3;
+}
+
+#card-border-team-builder {
+    border-radius: 15px;
+    max-width: 350px;
+    border-top: 4px solid #EC5355;
+    margin-bottom: 30px;
+}
+
+#card-border-karma {
+    border-radius: 15px;
+    max-width: 350px;
+    border-top: 4px solid #FBAD4B;
+}
+
+#card-border-calculator {
+    border-radius: 15px;
+    max-width: 350px;
+    border-top: 4px solid #549CEE;
+}
+
+.card {
+    max-width: 350px;
+    min-width: 300px;
+    height: 255px;
+    padding: 30px;
+    background-color: var(--background-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px #e4e4e4;
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+.card p{
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.4;
+    color: var(--font-color);
+    margin-top: 5px;
+    max-width: 240px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.card-text {
+    align-self: flex-start;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }    
+    #card-border-supervisor {
+        margin-bottom: 30px;
+    }
+    .central {
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .main-text p {
+        font-size: 14px;
+    }
+}
